@@ -40,3 +40,4 @@ with open('file.txt', 'r') as file:
      text = file.read()
 words = re.findall(r'\d+', text)
 word_counts = Counter(words)
+top_words = word_counts.most_common(5)
